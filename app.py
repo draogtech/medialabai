@@ -21,7 +21,7 @@ app.secret_key = b'\r6\xafd\xc29\x0b\x86=\xcb\x8d\x0f\xd8\x9c\x10}r\x89@\x17\x82
 # Heroku DB URL
 app.config['SQLALCHEMY_DATABASE_URI'] = "postgres://hsqbyhkrzskgzx:36f94ba4b49d4ad4b005e8dce3e57c27af48b2af545398788e1835d7df20acf8@ec2-34-254-69-72.eu-west-1.compute.amazonaws.com:5432/deolstqq6kogp" 
 
-app.config.from_object(os.environ['APP_SETTINGS'])
+# app.config.from_object(os.environ['APP_SETTINGS'])
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
