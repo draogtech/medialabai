@@ -7,7 +7,6 @@ from flask_cors import CORS, cross_origin
 import cloudinary
 from cloudinary import uploader
 
-
 app = Flask(__name__)
 
 # make all APIs allow cross-origin access.
@@ -117,4 +116,4 @@ def update_radio_station(station_id):
 
 
 if __name__ == "__main__":
-    app.run()
+    app.run(host='0.0.0.0', port=8080)
